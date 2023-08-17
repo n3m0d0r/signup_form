@@ -100,6 +100,7 @@ ul[class*="row"] {
   width: 100%;
   display: flex;
   margin-bottom: 10px;
+  align-items: flex-end;
 }
 
 .form-item {
@@ -124,11 +125,17 @@ ul[class*="row"] {
 
 .form-item input {
   border: 1px solid #E5E7EB;
+  border-radius: 2px;
   padding: 1px;
 }
 
 .error-input {
   border: 1px solid rgb(185, 48, 48);
+}
+
+.password-error-msg {
+  color: rgb(185, 48, 48);
+  font-size: .6rem;
 }
 
 .btn {
@@ -151,4 +158,10 @@ ul[class*="row"] {
 
 .login-msg {
   font-size: .8rem;
+}
+
+.password-label::after {
+  content: ' (mínimo 8 dígitos)';
+  text-transform: lowercase;
+  color: #444444;
 }

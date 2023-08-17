@@ -2,4 +2,15 @@
     main {
         flex-direction: column;
     }
+    ul[class*="row"] {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start !important;
+    }
+    .service-description {
+        margin-top: 1rem;
+    }
+    .login-msg {
+        margin-bottom: 1rem;
+    }
 }
