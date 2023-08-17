@@ -29,36 +29,37 @@
             <legend>Vamos começar!</legend>
             <ul class="row-1">
               <li class="form-item">
-                <label for=""></label>
-                <input type="text"></li>
+                <label for="first-name">Nome</label>
+                <input id="first-name"  name="first-name" type="text" required>
+              </li>
               <li class="form-item">
-                <label for=""></label>
-                <input type="text">
+                <label for="last-name">Sobrenome</label>
+                <input id="last-name" name="last-name" type="text" required>
               </li>
             </ul>
             <ul class="row-2">
               <li class="form-item">
-                <label for=""></label>
-                <input type="text"></li>
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" required></li>
               <li class="form-item">
-                <label for=""></label>
-                <input type="text">
+                <label class="not-required" for="phone-number">Número de telefone</label>
+                <input id="phone-number" name="phone-number" type="text" inputmode="numeric" placeholder="(XX)9XXXXXXXX" pattern="^\(\d{2}\)9\d{8}$">
               </li>
             </ul>
             <ul class="row-3">
               <li class="form-item">
-                <label for=""></label>
-                <input type="text"></li>
+                <label for="password">Senha</label>
+                <input id="password" name="password" type="password" required></li>
               <li class="form-item">
-                <label for=""></label>
-                <input type="text">
+                <label for="confirm-password">Confirmar senha</label>
+                <input id="confirm-password" name="confirm-password" type="password" required>
               </li>
             </ul>
           </fieldset>
-          <button type="submit">Criar Conta</button>
+          <button class="btn"type="submit">Criar Conta</button>
         </form>
       </section>
-      <p>Já tem uma conta? <a href="#">Entrar</a></p>
+      <p class="login-msg">Já tem uma conta? <a href="#">Entrar</a></p>
     </div>
   </main>
 </body>
